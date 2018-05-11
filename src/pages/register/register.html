@@ -1,0 +1,104 @@
+<!-- <ion-header>
+  <ion-navbar color="primary">
+    <ion-title style="text-align:center">
+
+    </ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="re-hed">
+      <button ion-button color="navColor" class="">JOIN</button>
+      <div>iMuslim</div>
+  </div>
+  <ion-list style="padding-top:10px;">
+    <ion-item>
+      <ion-label>I am a</ion-label>
+      <ion-select [(ngModel)]="gaming">
+        <ion-option value="user">Individual User</ion-option>
+        <ion-option value="mosque">Mosque/Islamic charity organization...</ion-option>
+        <ion-option value="visitor">Visitor</ion-option>
+      </ion-select>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label floating>Official Reg name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Address</ion-label>
+      <ion-textarea ></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Postal Code</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Country</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Mobile No</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Email 1</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Contact Person 1</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Login Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Password Creation</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Email 2</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Contact Person 2</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Website URL</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Photo Upload</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Brief Introduction more than 1,000 word</ion-label>
+      <ion-textarea type="text"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Upload legal documents (limit to 20 pic, limit file size)</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Brief description & info on file uploaded URL</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <div padding>
+      Legal statement / T&C, check box before submit for approval, Admin receive notification backend for approval, ~7 working days TAT
+    </div>
+    <ion-item>
+      <ion-label>I Agree</ion-label>
+      <ion-radio value="go"></ion-radio>
+    </ion-item>
+  </ion-list>
+  <div padding>
+    <button ion-button color="primary" block (click)="goToHome()">Submit</button>
+  </div>
+  <p class="for-tex" (click)="goToLog()">Login</p>
+</ion-content>
