@@ -1,0 +1,32 @@
+<!--
+  Generated template for the NearbymasquePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="navColor">
+    <ion-title>Near By Mosque</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+  <div style="margin-top:10px;">
+    <img src="assets/imgs/sampleMap.jpg" style="height:100%;width:100%;">
+  </div>
+  <ion-list>
+    <ion-list-header>List of Nearby Mosque</ion-list-header>
+    <ion-item *ngFor="let item of items" >
+      {{ item.name }}<span item-end>{{item.dis}}</span>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+      <ion-list-header>Prayer Room Nearby</ion-list-header>
+      <ion-item *ngFor="let item of itemsRoom" >
+        {{ item.name }}<span item-end>{{item.dis}}</span>
+      </ion-item>
+    </ion-list>
+</ion-content>

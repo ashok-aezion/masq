@@ -11,7 +11,7 @@ import { ListPage } from '../pages/list/list';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = "LoginPage";
+  rootPage: any = "EasyprayerPage";
 
   pages: Array<{title: string, component: any}>;
 
@@ -21,11 +21,11 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'Easy Prayer', component: HomePage },
+      { title: 'Easy Prayer', component: 'EasyprayerPage' },
       { title: 'My Mosque', component: HomePage },
       { title: 'Quran', component: HomePage },
       { title: 'Donation', component: HomePage },
-      { title: 'Social Hub', component: HomePage },
+      { title: 'Social Hub', component: 'SocialhubPage' },
       { title: 'eStore (coming soon)', component: HomePage },
       { title: 'Halal Places (coming soon)', component: HomePage },
       { title: 'User Profile / Setting', component: HomePage },

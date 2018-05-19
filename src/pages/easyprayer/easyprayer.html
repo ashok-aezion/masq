@@ -1,0 +1,38 @@
+<ion-header >
+  <ion-navbar color="navColor">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Easy Prayer
+    </ion-title>
+    <!-- <i class="fas fa-ellipsis-v"></i> -->
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+<div style="margin-top:10px;">
+  <img src="assets/imgs/7039-200.png" style="height:100%;width:100%;">
+</div>
+<p style="text-align:center; font-size:16px;">
+  Current/Next Prayer Time
+</p>
+<p style="text-align:center; font-size:16px;">
+  12:01 PM
+</p>
+<ion-grid style="bottom:0px;">
+  <ion-row>
+    <ion-col style="text-align:center" col-4>
+        <ion-icon style="font-size: 50px;color: #316b6a;"  ios="ios-alarm" md="md-alarm" (click)="presentPopover()"></ion-icon>
+    </ion-col>
+    <ion-col style="text-align:center" col-4>
+        <ion-icon style="font-size: 50px;color: #316b6a;" ios="ios-book" md="md-book" (click)="goToNear()"></ion-icon>
+      </ion-col>
+    <ion-col style="text-align:center" col-4>
+        <ion-icon style="font-size: 50px;color: #316b6a;" ios="ios-calendar" md="md-calendar"></ion-icon>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>
+

@@ -1,0 +1,76 @@
+<!--
+  Generated template for the SocialhubPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="navColor">
+    <ion-title>Social Hub</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content>
+    <ion-searchbar
+      [showCancelButton]="true">
+    </ion-searchbar>
+    <ion-grid style="bottom:0px;">
+        <ion-row>
+          <ion-col style="text-align:center" col-3>
+              <ion-icon style="font-size: 50px;color: #316b6a;" ios="ios-book" ios="ios-funnel" md="md-funnel"></ion-icon>
+              <span style="display: block;">sort</span>
+          </ion-col>
+          <ion-col style="text-align:center" col-3>
+              <ion-icon style="font-size: 50px;color: #316b6a;" ios="ios-play" md="md-play" (click)="goToNear()"></ion-icon>
+              <span style="display: block;">Video</span>
+          </ion-col>
+          <ion-col style="text-align:center" col-3>
+              <ion-icon style="font-size: 50px;color: #316b6a;" ios="ios-share" md="md-share"></ion-icon>
+              <ion-icon  ></ion-icon>
+              <span style="display: block;">Share</span>
+          </ion-col>
+          <ion-col style="text-align:center" col-3>
+              <ion-icon style="font-size: 50px;color: #316b6a;" ios="ios-add" md="md-add" (click)="newPost()"></ion-icon>
+              <span style="display: block;">New Post</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <!-- <ion-card>
+        <ion-card-content> -->
+          <ion-col>
+            <ion-input style="padding: 3px;border-radius: 50px;border: 1px solid #316b6a;" type="text" value="" placeholder="Whats on your mind?"></ion-input>
+          </ion-col>
+        <!-- </ion-card-content>
+      </ion-card> -->
+      <ion-card *ngFor=" let item of items">
+          <ion-item>
+              <ion-avatar item-start>
+                <img src="assets/imgs/iMuslim_logo1.jpg">
+              </ion-avatar>
+                  <ion-col>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</ion-col>
+          </ion-item>
+          <ion-grid>
+          <ion-row class="soci-ico">
+            <ion-col col-4>
+              <button ion-button icon-left clear small>
+                  <ion-icon ios="ios-heart" md="md-heart"></ion-icon>
+                  <div>12 Amin</div>
+              </button>
+            </ion-col>
+            <ion-col col-4>
+              <button ion-button icon-left clear small>
+                <ion-icon name="text"></ion-icon>
+                <div>4 Comments</div>
+              </button>
+            </ion-col>
+            <ion-col col-4>
+                <button ion-button icon-left clear small>
+                <ion-icon name="share"></ion-icon>
+                <div>6 Shares</div>
+                </button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+</ion-content>
