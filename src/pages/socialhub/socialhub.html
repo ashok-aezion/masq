@@ -1,16 +1,21 @@
+
 <!--
-  Generated template for the SocialhubPage page.
+  Generated template for the MymosquePage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
 
-  <ion-navbar color="navColor">
-    <ion-title>Social Hub</ion-title>
-  </ion-navbar>
+<ion-header >
+    <ion-navbar color="navColor">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Social Hub</ion-title>
+      <!-- <i class="fas fa-ellipsis-v"></i> -->
+    </ion-navbar>
+  </ion-header>
 
-</ion-header>
 <ion-content>
     <ion-searchbar
       [showCancelButton]="true">
@@ -22,7 +27,7 @@
               <span style="display: block;">sort</span>
           </ion-col>
           <ion-col style="text-align:center" col-3>
-              <ion-icon style="font-size: 50px;color: #316b6a;" ios="ios-play" md="md-play" (click)="goToNear()"></ion-icon>
+              <ion-icon style="font-size: 50px;color: #316b6a;" ios="ios-play" md="md-play"></ion-icon>
               <span style="display: block;">Video</span>
           </ion-col>
           <ion-col style="text-align:center" col-3>

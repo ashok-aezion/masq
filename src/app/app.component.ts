@@ -11,7 +11,7 @@ import { ListPage } from '../pages/list/list';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = "EasyprayerPage";
+  rootPage: any = "LoginPage";
 
   pages: Array<{title: string, component: any}>;
 
@@ -22,13 +22,13 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Easy Prayer', component: 'EasyprayerPage' },
-      { title: 'My Mosque', component: HomePage },
-      { title: 'Quran', component: HomePage },
-      { title: 'Donation', component: HomePage },
+      { title: 'My Mosque', component: 'MymosquePage' },
+      { title: 'Quran', component: "QuranPage" },
+      { title: 'Donation', component: 'ComingsoonPage' },
       { title: 'Social Hub', component: 'SocialhubPage' },
-      { title: 'eStore (coming soon)', component: HomePage },
-      { title: 'Halal Places (coming soon)', component: HomePage },
-      { title: 'User Profile / Setting', component: HomePage },
+      { title: 'eStore (coming soon)', component: 'ComingsoonPage' },
+      { title: 'Halal Places (coming soon)', component: 'ComingsoonPage' },
+      { title: 'User Profile / Setting', component: 'ComingsoonPage' },
     ];
 
   }
